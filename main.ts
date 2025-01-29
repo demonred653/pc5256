@@ -9,13 +9,9 @@ input.onButtonPressed(Button.B, function () {
     radio.sendMessage(RadioMessage.message2)
 })
 radio.onReceivedMessage(RadioMessage.message2, function () {
-    basic.showLeds(`
-        . . # . .
-        . . # . .
-        # # # # #
-        . . # . .
-        . . # . .
-        `)
+    for (let index = 0; index < 4; index++) {
+        music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
+    }
 })
 radio.onReceivedMessage(RadioMessage.message1, function () {
     basic.showLeds(`
