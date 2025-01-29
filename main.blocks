@@ -1,0 +1,13 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="]*4z~p)6M]{7YdkwKx2w">1</variable><variable type="RadioMessage" id="fsm==I}Blf=l{GA.x)A(">0message1</variable><variable type="RadioMessage" id="2xj!%~nXJHvU^%owX}}-">0message2</variable></variables><block type="pxt-on-start" id="Nu1t#7Em(,|pV@rMzKPV" x="0" y="0"></block><block type="device_forever" id="g=oZZU*0s]j4~p#*7jCF" x="237" y="0"><statement name="HANDLER"><block type="radio_set_group" id="9r(Z~Ju/p;RN$`jWT4Qn"><value name="ID"><shadow type="math_number_minmax" id="7,h]9N1Xvx;:^8*yj.$m"><mutation min="0" max="255" label="Id" precision="0"></mutation><field name="SLIDER">5256</field></shadow></value></block></statement></block><block type="radioOnMessageReceived" id="HSUinn4ivl~nzJ_$5yt6" x="658" y="196"><value name="msg"><shadow type="radioMessageCode" id="q2U|u+zl^I^..o@sS(/z"><field name="MEMBER">0message1</field></shadow></value><statement name="HANDLER"><block type="device_show_leds" id="w`^I[Kp?p{j:HxjoyDd?"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field></block></statement></block><block type="device_button_event" id=";s_og.lSZtM*g^Y-)0#}" x="215" y="309"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="radioBroadcastMessage" id="dF*y}`+bzjtG0tkpF~W}"><value name="msg"><shadow type="radioMessageCode" id="fDR,EO**0QJ^hEBz,Hpo"><field name="MEMBER">message1</field></shadow></value></block></statement></block><block type="device_button_event" id="i_1Ghv*v{QW(3bnz@(.d" x="225" y="506"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="radioBroadcastMessage" id="aiqb9jYb?y#4Gk;7R0}y"><value name="msg"><shadow type="radioMessageCode" id="Qd2xwmhW.3{4LJy0B(+x"><field name="MEMBER">0message2</field></shadow></value></block></statement></block><block type="controls_if" id="[-pS8-B^-dx7B;XC8In)" disabled-reasons="ORPHANED_BLOCK,MANUALLY_DISABLED" x="1234" y="519"><value name="IF0"><shadow type="logic_boolean" id=";2*oI8P*ic|{I;9zG=UZ" disabled-reasons="MANUALLY_DISABLED"><field name="BOOL">TRUE</field></shadow></value></block><block type="radioOnMessageReceived" id="o7zeU#QX-Sr~2WN)y#tZ" x="664" y="596"><value name="msg"><shadow type="radioMessageCode" id="BfFcH,x8FJri!iId{$B1"><field name="MEMBER">0message2</field></shadow></value><statement name="HANDLER"><block type="device_show_leds" id="5x`75pq2/6hth*a/{$e{"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        # # # # # 
+        . . # . . 
+        . . # . .
+        `</field></block></statement></block></xml>
